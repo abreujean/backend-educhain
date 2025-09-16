@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = postgresql://postgres:HsjdbPpTgQHEOgnaPavTPcSNZePTpdWe@postgres.railway.internal:5432/railway
+  url      = env("POSTGRES_URL")
 }
 
 /// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
